@@ -1,0 +1,4 @@
+1,La primera,1980-06-25
+2,Nova era de lemmagatzematge,2003-09-01
+3,El discurs de la persistencia,2003-09-15
+4,Mon obert: eines visuals,2003-09-25

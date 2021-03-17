@@ -1,0 +1,16 @@
+1,R. Sanchez,1968,espanyol,true
+2,P. Hook,1963,angles,true
+3,P. Marshall,1970,america,true
+4,S. Lambert,1959,america,true
+5,N. Schroeder,1979,alemany,true
+6,V. Minkine,1971,japones,true
+7,D. Bode,1967,holandes,true
+8,F. Perrier,1955,frances,true
+9,F. Treutnier,1980,rus,true
+10,S. Minotti,1977,italia,true
+11,M. Alihale,1970,egipci,true
+12,M. Dreisser,1966,alemany,true
+13,S, Sahal,1950,hinda,true
+14,P. Ulanev,1953,polac,true
+15,R. Manito,1958,mexica,true
+16,A. Lackman,1951,holandes,false
