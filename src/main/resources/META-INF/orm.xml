@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+    <description>The minimal mappings for a persistent entity in XML.</description>
+    <entity name="Autor" class="Entities.Autor" access="FIELD">
+        <table name="autors"/>
+        <attributes>
+            <id name="id_autor"/>
+            <basic name="nom">
+                <column name="nom" length="30"/>
+            </basic>
+            <basic name="nacionalitat">
+                <column name="nacionalitat" length="12"/>
+            </basic>
+            <basic name="any_naixement">
+                <column name="any_naixement" length="4"/>
+            </basic>
+            <basic name="actiu">
+                <column name="actiu"  />
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
