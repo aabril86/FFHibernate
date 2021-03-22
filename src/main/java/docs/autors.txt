@@ -10,7 +10,7 @@
 10,S. Minotti,1977,italia,true
 11,M. Alihale,1970,egipci,true
 12,M. Dreisser,1966,alemany,true
-13,S, Sahal,1950,hinda,true
+13,S. Sahal,1950,hinda,true
 14,P. Ulanev,1953,polac,true
 15,R. Manito,1958,mexica,true
 16,A. Lackman,1951,holandes,false

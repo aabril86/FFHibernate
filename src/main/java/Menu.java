@@ -28,7 +28,7 @@ public class Menu {
                 System.out.println("valor no vàlid");
                 e.printStackTrace();
             }
-        } while (option != 1  && option != 0);
+        } while (option != 0 && option != 1 && option != 2);
 
         return option;
     }

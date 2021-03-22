@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Entities.Autor" table="autors">
+        <meta attribute="class-description">
+            This class contains the autor  detail.
+        </meta>
+        <id name="id_autor" type="int" column="id_autor">
+
+        </id>
+        <property name="nom" column="nom" type="string"/>
+        <property name="nacionalitat" column="nacionalitat" type="string"/>
+        <property name="any_naixement" column="any_naixement" type="string"/>
+        <property name="actiu" column="actiu" type="boolean"/>
+    </class>
+</hibernate-mapping>
