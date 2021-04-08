@@ -9,4 +9,6 @@ public class Personaje {
     String nombre, sprite, categoria;
 
     ArrayList<Carta> mano = new ArrayList<>();
+
+
 }
