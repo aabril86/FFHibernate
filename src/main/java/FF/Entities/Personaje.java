@@ -1,6 +1,8 @@
 package FF.Entities;
 
-import Entities.Carta;
+
+
+import FF.Entities.Cartas.Carta;
 
 import java.io.Serializable;
 import java.util.ArrayList;
