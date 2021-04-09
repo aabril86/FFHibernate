@@ -1,6 +1,8 @@
 package FF.Entities;
 
-import Entities.Carta;
+
+
+import FF.Entities.Cartas.Carta;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,7 +11,7 @@ import java.util.List;
 public class Mazo implements Serializable {
     private int id_mazo;
 
-    private List<Entities.Carta> cartas = new ArrayList<Entities.Carta> ();
+    private List<Carta> cartas = new ArrayList<Carta> ();
 
 
     public Mazo(int id_mazo) {
@@ -25,15 +27,15 @@ public class Mazo implements Serializable {
     public void setId_mazo(int id_mazo) {
         this.id_mazo = id_mazo;
     }
-    public void addCarta(Entities.Carta art){
+    public void addCarta(Carta art){
         cartas.add(art);
     }
 
-    public Entities.Carta getCarta(int i){
+    public Carta getCarta(int i){
         return cartas.get(i);
     }
 
-    public List<Entities.Carta> getCartas() {
+    public List<Carta> getCartas() {
         return cartas;
     }
     public void setCartas(List<Carta> cartas) {
