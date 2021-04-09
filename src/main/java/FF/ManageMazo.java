@@ -34,7 +34,7 @@ public class ManageMazo {
 
     }
 
-    /* Method to CREATE an Autor in the database */
+    /* Method to CREATE a Mazo */
     public void addMazo(Mazo mazo) {
         Session session = factory.openSession();
         Transaction tx = null;
@@ -52,7 +52,7 @@ public class ManageMazo {
         }
     }
 
-    /* Method to READ all Autors */
+    /* Method to READ all Mazos */
     public void listMazos() {
         Session session = factory.openSession();
         Transaction tx = null;
