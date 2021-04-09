@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Entities.Personaje" table="personaje">
+        <meta attribute="class-description">
+            This class contains the personaje detail.
+        </meta>
+        <id name="id_personaje" type="int" column="id_personaje"/>
+        <property name="nombre" column="nombre" type="string"/>
+        <property name="sprite" column="sprite" type="string"/>
+        <property name="categoria" column="categoria" type="string"/>
+        <property name="voda" column="vida" type="int"/>
+        <property name="mana" column="mana" type="int"/>
+        <property name="mano" column="mano" type="string"/>
+    </class>
+</hibernate-mapping>

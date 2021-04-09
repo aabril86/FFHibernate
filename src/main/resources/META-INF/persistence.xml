@@ -6,7 +6,7 @@
         <mapping-file>META-INF/orm.xml</mapping-file>
 
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.22.136:5432/jpamagazine"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.22.136:5432/FF"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.user" value="usuario"/>
             <property name="javax.persistence.jdbc.password" value="password"/>

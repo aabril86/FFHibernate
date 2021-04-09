@@ -4,9 +4,9 @@ package FF.Entities;
 
 import FF.Entities.Cartas.Carta;
 
+import FF.Entities.Cartas.Carta;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Personaje implements Serializable {
     int id_personaje, vida, mana;

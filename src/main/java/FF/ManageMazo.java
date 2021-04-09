@@ -1,6 +1,7 @@
 package FF;
 
-import Entities.Mazo;
+
+import FF.Entities.Mazo;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

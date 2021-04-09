@@ -13,7 +13,7 @@
 
         <!-- Assume test is the database name -->
         <property name="hibernate.connection.url">
-            jdbc:postgresql://192.168.22.157:5432/magazine
+            jdbc:postgresql://192.168.22.157:5432/FF
         </property>
         <property name="hibernate.connection.username">
             usuario
@@ -24,7 +24,9 @@
 
         <!-- List of XML mapping files -->
 
-        <mapping resource="Autor.hbm.xml"/>
+        <mapping resource="Personaje.hbm.xml"/>
+        <mapping resource="Mazo.hbm.xml"/>
+        <mapping resource="Carta.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>
