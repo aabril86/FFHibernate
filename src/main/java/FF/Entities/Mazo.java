@@ -9,6 +9,7 @@ import java.util.List;
 public class Mazo implements Serializable {
     private int id_mazo;
 
+    //One to many
     private List<Carta> cartas = new ArrayList<Carta> ();
 
     public Mazo(int id_mazo) {

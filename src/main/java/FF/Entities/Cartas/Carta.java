@@ -1,8 +1,13 @@
 package FF.Entities.Cartas;
 
-public class Carta {
+import java.io.Serializable;
+
+public class Carta implements Serializable {
     int id_carta, coste_mana;
     String nombre, descripcion, imagen;
+
+    public Carta() {
+    }
 
     @Override
     public String toString() {

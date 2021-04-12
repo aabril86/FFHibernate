@@ -1,6 +1,5 @@
 package FF;
 
-import Entities.Autor;
 import FF.Entities.Personaje;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -41,8 +40,8 @@ public class ManagePersonaje {
             List personatges = session.createQuery("FROM Personaje").list();
 
             for (Iterator iterator = personatges.iterator(); iterator.hasNext();) {
-                Autor autor = (Autor) iterator.next();
-                System.out.println(autor.toString());
+                Personaje personaje = (Personaje) iterator.next();
+                System.out.println(personaje.toString());
             }
 
         }catch (HibernateException e) {
