@@ -1,9 +1,8 @@
 package FF.Entities.Cartas;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import FF.Entities.Personaje;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -20,6 +19,9 @@ public class Carta implements Serializable {
     String imagen;
     @Column(name = "coste_mana")
     int coste_mana;
+    @ManyToOne
+    @JoinColumn(name = "id_personaje")
+    private Personaje personaje;
 
     public Carta() {
     }
