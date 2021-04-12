@@ -2,12 +2,22 @@ package FF.Entities;
 
 import FF.Entities.Cartas.Carta;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table( name =  "Mazo" )
 public class Mazo implements Serializable {
+    @Id
+    @Column
     private int id_mazo;
+
+    Personaje personaje;
 
     //One to many
     private List<Carta> cartas = new ArrayList<Carta> ();
