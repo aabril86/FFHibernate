@@ -11,14 +11,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table( name =  "Mazo" )
+@Table(name="mazo")
 public class Mazo implements Serializable {
     @Id
     @Column
     private int id_mazo;
-
-    Personaje personaje;
-
+    private Personaje personaje;
     //One to many
     private List<Carta> cartas = new ArrayList<Carta> ();
 

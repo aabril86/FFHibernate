@@ -19,9 +19,6 @@ public class Carta implements Serializable {
     String imagen;
     @Column(name = "coste_mana")
     int coste_mana;
-    @ManyToOne
-    @JoinColumn(name = "id_personaje")
-    private Personaje personaje;
 
     public Carta() {
     }
