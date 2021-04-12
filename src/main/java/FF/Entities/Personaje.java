@@ -25,7 +25,6 @@ public class Personaje implements Serializable {
     private  String sprite;
     @Column(name = "categoria")
     private  String categoria;
-
     ArrayList<Carta> mano = new ArrayList<Carta>();
 
     public Personaje(int id_personaje, int vida, int mana, String nombre, String sprite, String categoria, ArrayList<Carta> mano) {
