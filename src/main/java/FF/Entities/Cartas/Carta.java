@@ -1,10 +1,25 @@
 package FF.Entities.Cartas;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
+@Entity
+@Table( name = "Carta" )
 public class Carta implements Serializable {
-    int id_carta, coste_mana;
-    String nombre, descripcion, imagen;
+    @Id
+    @Column(name = "id_carta")
+    int id_carta;
+    @Column(name = "nombre")
+    String nombre;
+    @Column(name = "descripcion")
+    String descripcion;
+    @Column(name = "imagen")
+    String imagen;
+    @Column(name = "coste_mana")
+    int coste_mana;
 
     public Carta() {
     }
