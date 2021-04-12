@@ -1,14 +1,32 @@
 package FF.Entities;
 
-
-
 import FF.Entities.Cartas.Carta;
 
-import FF.Entities.Cartas.Carta;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+//HAY QUE CAMBIAR EL NOMBRE DE LA TABLA
+@Entity
+@Table( name = "autors" )
 public class Personaje implements Serializable {
+
+    //ESTO HAY QUE MODIFICARLO
+    @Id
+    @Column(name = "id_autor")
+    private  int id_autor;
+    @Column(name = "nom")
+    private  String nom;
+    @Column(name = "nacionalitat")
+    private  String nacionalitat;
+    @Column(name = "any_naixement")
+    private  String any_naixement;
+    @Column(name = "actiu")
+    private  boolean actiu;
+
     int id_personaje, vida, mana;
     String nombre, sprite, categoria;
 
