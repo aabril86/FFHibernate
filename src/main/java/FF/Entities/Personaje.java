@@ -36,6 +36,10 @@ public class Personaje implements Serializable {
         this.mano = mano;
     }
 
+    public Personaje() {
+
+    }
+
     public int getId_personaje() {
         return id_personaje;
     }

@@ -14,12 +14,12 @@ public class ManageCarta {
     private static SessionFactory factory;
 
     public static void main(String[] args) throws IOException {
-        try {
-            factory = new Configuration().configure().buildSessionFactory();
-        } catch (Throwable ex) {
-            System.err.println("Failed to create sessionFactory object." + ex);
-            throw new ExceptionInInitializerError(ex);
-        }
+//        try {
+//            factory = new Configuration().configure().buildSessionFactory();
+//        } catch (Throwable ex) {
+//            System.err.println("Failed to create sessionFactory object." + ex);
+//            throw new ExceptionInInitializerError(ex);
+//        }
 
         Carta carta = new Carta();
         ManageCarta MC = new ManageCarta();

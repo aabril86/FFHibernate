@@ -15,12 +15,12 @@ public class ManageMazo {
     private static SessionFactory factory;
 
     public static void main(String[] args) throws IOException {
-        try {
-            factory = new Configuration().configure().buildSessionFactory();
-        } catch (Throwable ex) {
-            System.err.println("Failed to create sessionFactory object." + ex);
-            throw new ExceptionInInitializerError(ex);
-        }
+//        try {
+//            factory = new Configuration().configure().buildSessionFactory();
+//        } catch (Throwable ex) {
+//            System.err.println("Failed to create sessionFactory object." + ex);
+//            throw new ExceptionInInitializerError(ex);
+//        }
 
         ManageMazo MM = new ManageMazo();
         Mazo mazo = new Mazo();
