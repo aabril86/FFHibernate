@@ -3,10 +3,13 @@ package FF.Entities;
 import FF.Entities.Cartas.Carta;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "mano")
-public class Mano {
+public class Mano implements Serializable {
     @Id
     @Column
     private int id_mano;
@@ -15,7 +18,8 @@ public class Mano {
     private Personaje personaje;
     @OneToMany(mappedBy = "mano")
     @JoinColumn(name = "id_carta")
-    private Carta carta;
+    private List<Carta> cartas = new ArrayList<Carta>();
+    Carta carta;
 
     public Personaje getPersonaje() {
         return personaje;

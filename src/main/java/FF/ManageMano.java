@@ -29,8 +29,7 @@ public class ManageMano {
         MM.listManos();
         MM.deleteMano(mano.getId_mano());
         MM.updateMano(mano.getId_mano());
-        System.out
-                .println("Manos llegits de la base de dades després de des actualitzacions");
+        System.out.println("Manos llegits de la base de dades després de des actualitzacions");
         MM.listManos();
 
     }

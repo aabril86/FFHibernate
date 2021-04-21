@@ -12,7 +12,6 @@ public class ManagePersonaje {
     private static SessionFactory factory;
 
     public void afegirPersonatge(Personaje personaje){
-
         Session session = factory.openSession();
         Transaction tx = null;
 

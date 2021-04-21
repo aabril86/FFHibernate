@@ -2,10 +2,7 @@ package FF.Entities;
 
 import FF.Entities.Cartas.Carta;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +14,8 @@ public class Mazo implements Serializable {
     @Column
     private int id_mazo;
     private Personaje personaje;
-    //One to many
+    @OneToMany(mappedBy = "mazo")
+    @JoinColumn(name = "id_carta")
     private List<Carta> cartas = new ArrayList<Carta> ();
 
     public Mazo(int id_mazo) {

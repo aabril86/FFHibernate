@@ -37,7 +37,6 @@ public class Personaje implements Serializable {
     }
 
     public Personaje() {
-
     }
 
     public int getId_personaje() {
